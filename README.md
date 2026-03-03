@@ -1,4 +1,5 @@
-LangGraph Agentic AI Application
+### LangGraph Agentic AI Application
+
 Stateful AI Workflows using LangGraph + Streamlit + Groq LLM
 
 This project is a Stateful Agentic AI system built using:
