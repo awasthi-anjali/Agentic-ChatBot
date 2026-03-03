@@ -338,4 +338,4 @@ Built a stateful Agentic AI system using LangGraph integrating Groq LLM and Tavi
 
 👩‍💻 Author
 Anjali Awasthi
-AI Engineer | LangGraph | Agentic AI | LLM Workflows | Databricks | AWS
+AI Engineer | LangGraph | Agentic AI | RAG | LLM Workflows | Databricks | AWS 
