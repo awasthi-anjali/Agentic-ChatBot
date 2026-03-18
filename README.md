@@ -1,341 +1,296 @@
-### LangGraph Agentic AI Application
+# 🧠 LangGraph Agentic AI Application
 
-Stateful AI Workflows using LangGraph + Streamlit + Groq LLM
+> **Stateful Agentic AI System using LangGraph, Groq LLM, and Tavily Search**
 
-This project is a Stateful Agentic AI system built using:
 
-🧠 LangGraph (AI workflow orchestration)
+## 🌟 Overview
 
-🤖 Groq LLM (LLaMA Models)
+This project is a **production-style Agentic AI system** that orchestrates **stateful workflows** using LangGraph.
 
-🌐 Tavily Web Search API
+It integrates:
 
-🎨 Streamlit UI
+* 🤖 **Groq LLM (LLaMA models)**
+* 🌐 **Tavily Web Search API**
+* 🎨 **Streamlit UI**
 
-⚡ Python
+Supports:
 
-It supports three intelligent use cases:
+* 🗣️ Chatbot
+* 🌍 Tool-augmented chatbot
+* 📰 AI News automation pipeline
 
-🗣️ Basic Chatbot
+---
 
-🌍 Chatbot with Web Search
+## 🧠 Tech Stack
 
-📰 AI News Summarizer
+* **LangGraph** – Workflow orchestration
+* **Groq LLM** – Fast inference (LLaMA models)
+* **Tavily API** – Real-time web search
+* **Streamlit** – UI layer
+* **Python** – Core backend
 
-📌 What This Project Demonstrates
+---
 
-✅ Stateful AI Agents
-✅ Tool Integration with LLM
-✅ Conditional Graph Routing
-✅ Multi-Step AI Pipelines
-✅ Real-Time Web Search Integration
-✅ News Fetch → Summarize → Save Workflow
-✅ Clean Modular Architecture
+# 🏗️ Architecture Diagram
 
-🏗️ Complete Architecture Overview
-🔹 High Level Flow
-4
-📂 Project Structure
+```mermaid
+flowchart TD
+    A[User Input via Streamlit UI] --> B[Main Controller]
+    B --> C[Load LLM (Groq)]
+    B --> D[Select Use Case]
 
+    D --> E1[Basic Chatbot]
+    D --> E2[Chatbot with Tool]
+    D --> E3[AI News Pipeline]
+
+    E1 --> F1[LLM Response]
+
+    E2 --> F2{Tool Required?}
+    F2 -- Yes --> G[Tavily Search Tool]
+    G --> H[LLM Final Response]
+    F2 -- No --> H
+
+    E3 --> I[Fetch News]
+    I --> J[Summarize via LLM]
+    J --> K[Save Markdown]
+
+    F1 --> Z[Display Output]
+    H --> Z
+    K --> Z
+```
+
+---
+
+# ⚙️ High-Level Workflow
+
+```mermaid
+flowchart LR
+    A[Start] --> B[Load UI]
+    B --> C[User Input]
+    C --> D[Select Use Case]
+    D --> E[Load LLM]
+    E --> F[Build Graph]
+    F --> G[Execute Graph]
+    G --> H[Display Output]
+```
+
+---
+
+# 📂 Project Structure
+
+```bash
 app.py
 src/
 ├── LanggraphAgenticAI/
-│ ├── main.py
-│ ├── Graph/
-│ │ └── graph_builder.py
-│ ├── Nodes/
-│ │ ├── basic_chatbot_node.py
-│ │ ├── chatbot_with_tool_node.py
-│ │ └── ai_news_node.py
-│ ├── Tools/
-│ │ └── search_tool.py
-│ ├── state/
-│ │ └── state.py
-│ ├── LLMS/
-│ │ └── groqllm.py
-│ └── UI/
-│ ├── uiconfigfile.ini
-│ ├── uiconfigfile.py
-│ └── StreamlitUI/
-│ ├── loadui.py
-│ └── display_result.py
-🧠 How The Application Works (Simple Explanation)
+│   ├── main.py
+│   ├── Graph/
+│   │   └── graph_builder.py
+│   ├── Nodes/
+│   │   ├── basic_chatbot_node.py
+│   │   ├── chatbot_with_tool_node.py
+│   │   └── ai_news_node.py
+│   ├── Tools/
+│   │   └── search_tool.py
+│   ├── state/
+│   │   └── state.py
+│   ├── LLMS/
+│   │   └── groqllm.py
+│   └── UI/
+│       ├── uiconfigfile.ini
+│       ├── uiconfigfile.py
+│       └── StreamlitUI/
+│           ├── loadui.py
+│           └── display_result.py
+```
 
-Let’s explain step by step so even beginners understand 👇
+---
 
-1️⃣ app.py – Entry Point
-from src.LanggraphAgenticAI.main import load_langgraph_agenticai_app
+# 🧠 Core Concepts
 
-This file only does one thing:
+## ✅ Stateful AI System
 
-It calls:
-
-load_langgraph_agenticai_app()
-
-So basically:
-
-👉 When you run the app, it loads the Streamlit AI application.
-
-2️⃣ main.py – The Brain Controller
-
-This is the central controller of the app.
-
-It performs:
-
-Loads UI
-
-Gets user input
-
-Configures LLM
-
-Builds LangGraph
-
-Executes selected workflow
-
-Displays result
-
-Simple Flow:
-Load UI
-↓
-Get User Input
-↓
-Select Use Case
-↓
-Load LLM Model
-↓
-Build Graph
-↓
-Run Graph
-↓
-Show Output
-3️⃣ UI Layer (Streamlit)
-🔹 loadui.py
-
-This builds the entire sidebar UI.
-
-It:
-
-Loads model options
-
-Loads use case options
-
-Takes API keys
-
-Takes user input
-
-Handles AI News frequency selection
-
-Everything user selects is stored in:
-
-self.user_controls
-🔹 uiconfigfile.ini
-
-This is configuration file.
-
-It stores:
-
-Page title
-
-LLM options
-
-Model options
-
-Use cases
-
-So instead of hardcoding values, we read from config file.
-
-Very professional design practice ✅
-
-4️⃣ LLM Layer (groqllm.py)
-
-This connects to Groq API.
-
-ChatGroq(api_key=groq_api_key, model=selected_groq_model)
-
-User selects:
-
-Model
-
-API Key
-
-And we create LLM object dynamically.
-
-5️⃣ LangGraph – Core Intelligence
-
-Now comes the most important part 🚀
-
-LangGraph lets us create Stateful AI Workflows
-
-All workflows use this shared state:
-
+```python
 class State(TypedDict):
-messages: Annotated[list, add_messages]
+    messages: Annotated[list, add_messages]
+```
 
-State stores conversation messages.
+* Maintains conversation context
+* Enables multi-step reasoning
 
-🔹 Use Case 1: Basic Chatbot
-Graph Flow:
-START
-↓
-Chatbot Node
-↓
-END
-Node Used:
+---
 
-BasicChatbotNode
+# 🤖 Use Case 1: Basic Chatbot
 
-This simply sends messages to LLM and returns response.
+```mermaid
+flowchart TD
+    A[Start] --> B[Chatbot Node]
+    B --> C[End]
+```
 
-Very simple.
+* Direct LLM interaction
+* Simple conversational flow
 
-🔹 Use Case 2: Chatbot with Web
+---
 
-Now it becomes more advanced 👇
+# 🌍 Use Case 2: Chatbot with Web Search
 
-Graph Flow:
-START
-↓
-Chatbot
-↓
-(If Tool Needed?)
-↓
-Tool Node
-↓
-Back to Chatbot
-↓
-END
-What Happens?
+```mermaid
+flowchart TD
+    A[Start] --> B[Chatbot]
+    B --> C{Tool Needed?}
+    C -- Yes --> D[Tavily Search]
+    D --> E[Chatbot]
+    C -- No --> E
+    E --> F[End]
+```
 
-User asks question
+### ⚙️ How it works:
 
-LLM decides if tool is required
+* LLM decides tool usage
+* Executes web search
+* Returns enriched response
 
-If required → Tavily search tool runs
+👉 Uses: `tools_condition`
+👉 Enables **true agentic behavior**
 
-Tool result returns to chatbot
+---
 
-LLM generates final answer
+# 📰 Use Case 3: AI News Pipeline
 
-This uses:
+```mermaid
+flowchart TD
+    A[Start] --> B[Fetch News]
+    B --> C[Summarize via LLM]
+    C --> D[Save Markdown]
+    D --> E[End]
+```
 
-tools_condition
+### 📌 Pipeline Steps
 
-This enables conditional branching.
+1. Fetch latest AI news (Tavily API)
+2. Summarize using LLM
+3. Save as markdown file
 
-This is true agentic AI behavior.
+📁 Output:
 
-🔹 Use Case 3: AI NEWS
-
-This is a multi-step pipeline.
-
-Graph Flow:
-START
-↓
-Fetch News
-↓
-Summarize News
-↓
-Save Result as Markdown
-↓
-END
-Step 1: Fetch News
-
-Using:
-
-TavilyClient()
-
-Fetches latest AI news.
-
-Step 2: Summarize News
-
-LLM:
-
-Formats news
-
-Sorts by date
-
-Generates markdown summary
-
-Step 3: Save Result
-
-Creates file:
-
+```
 ./AINews/daily_summary.md
+```
 
-Then UI displays markdown content.
+---
 
-🧠 Why This Project is Powerful
+# 🧩 System Layers
 
-This project demonstrates:
+## 1️⃣ Entry Point (`app.py`)
 
-- Stateful Graph Execution
+* Launches Streamlit app
 
-- Multi-Step AI pipelines
+## 2️⃣ Controller (`main.py`)
 
-- Tool-based LLM agents
+* Handles:
 
-- Conditional routing
+  * UI loading
+  * Input processing
+  * Graph execution
 
-- External API integration
+## 3️⃣ UI Layer
 
-- Production-level structure
+* Dynamic config via `.ini`
+* Stores user inputs
+* Clean modular design
 
-- This is NOT just a chatbot.
+## 4️⃣ LLM Layer
 
-This is a Graph-based Agentic AI System.
+```python
+ChatGroq(api_key, model)
+```
 
-🚀 Installation
-1️⃣ Clone
+* Dynamic model selection
+* Fast inference
+
+## 5️⃣ LangGraph Layer
+
+* Stateful execution
+* Conditional routing
+* Multi-step workflows
+
+---
+
+# 🚀 Why This Project Stands Out
+
+✔️ Graph-based AI architecture
+✔️ Real-world agent workflows
+✔️ Tool-integrated LLM system
+✔️ Modular & scalable design
+✔️ Production-style pipeline
+
+> ⚡ This is NOT just a chatbot — it's a **full Agentic AI System**
+
+---
+
+# ⚡ Installation
+
+## 1️⃣ Clone
+
+```bash
 git clone https://github.com/awasthi-anjali/Agentic-ChatBot.git
 cd langgraph-agentic-ai
-2️⃣ Create Virtual Environment
+```
+
+## 2️⃣ Virtual Environment
+
+```bash
 python -m venv venv
 source venv/bin/activate
-3️⃣ Install Dependencies
+```
+
+## 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-4️⃣ Set API Keys
+```
 
-You need:
+## 4️⃣ Set API Keys
 
-GROQ_API_KEY
+* `GROQ_API_KEY`
+* `TAVILY_API_KEY`
 
-TAVILY_API_KEY
+👉 Enter via UI
 
-You can enter them in the UI.
+---
 
-5️⃣ Run App
+## ▶️ Run App
+
+```bash
 streamlit run app.py
-🎯 Use Cases
-🗣️ Basic Chatbot
+```
 
-Simple conversation with selected Groq model.
+---
 
-🌍 Chatbot with Web
+# 🎯 Use Cases
 
-LLM + Tavily Search Tool Integration.
+| Feature        | Description             |
+| -------------- | ----------------------- |
+| 🗣️ Chatbot    | Basic LLM interaction   |
+| 🌍 Web Chatbot | LLM + Search tool       |
+| 📰 AI News     | Automated news pipeline |
 
-📰 AI News
+---
 
-Fetches latest AI news and generates summarized markdown report.
+# 🔮 Future Improvements
 
-🔮 Future Improvements
+* Memory persistence
+* Multi-agent collaboration
+* Vector database (RAG)
+* Authentication system
+* AWS deployment
+* Streaming responses
 
-Add memory persistence
+---
 
-Add multi-agent coordination
+# 📌 Resume-Ready Summary
 
-Add vector database retrieval
+> Built a **stateful Agentic AI system using LangGraph**, integrating Groq LLM and Tavily Web Search API. Designed multi-step AI workflows with conditional routing, tool-based reasoning, and a Streamlit UI for real-time interaction.
 
-Add authentication
+---
 
-Deploy on AWS
-
-Add streaming responses
-
-Summary (Short Version)
-
-Built a stateful Agentic AI system using LangGraph integrating Groq LLM and Tavily Web Search API. Implemented multi-step AI workflows including tool-based chatbot and automated AI news summarization pipeline using conditional graph routing and Streamlit UI.
-
-👩‍💻 Author
-Anjali Awasthi
-AI Engineer | LangGraph | Agentic AI | RAG | LLM Workflows | Databricks | AWS 
