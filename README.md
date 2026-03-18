@@ -36,7 +36,7 @@ Supports:
 ```mermaid
 flowchart TD
     A[User Input via Streamlit UI] --> B[Main Controller]
-    B --> C[Load LLM (Groq)]
+    B --> C[Load LLM<br/>Groq]
     B --> D[Select Use Case]
 
     D --> E1[Basic Chatbot]
