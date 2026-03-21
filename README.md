@@ -288,7 +288,7 @@ streamlit run app.py
 
 ---
 
-# 📌 Resume-Ready Summary
+# Summary
 
 > Built a **stateful Agentic AI system using LangGraph**, integrating Groq LLM and Tavily Web Search API. Designed multi-step AI workflows with conditional routing, tool-based reasoning, and a Streamlit UI for real-time interaction.
 
