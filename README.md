@@ -1,9 +1,9 @@
-# 🧠 LangGraph Agentic AI Application
+#  LangGraph Agentic AI Application
 
 > **Stateful Agentic AI System using LangGraph, Groq LLM, and Tavily Search**
 
 
-## 🌟 Overview
+##  Overview
 
 This project is a **production-style Agentic AI system** that orchestrates **stateful workflows** using LangGraph.
 
@@ -21,7 +21,7 @@ Supports:
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 * **LangGraph** – Workflow orchestration
 * **Groq LLM** – Fast inference (LLaMA models)
@@ -105,9 +105,9 @@ src/
 
 ---
 
-# 🧠 Core Concepts
+#  Core Concepts
 
-## ✅ Stateful AI System
+##  Stateful AI System
 
 ```python
 class State(TypedDict):
@@ -150,8 +150,8 @@ flowchart TD
 * Executes web search
 * Returns enriched response
 
-👉 Uses: `tools_condition`
-👉 Enables **true agentic behavior**
+ Uses: `tools_condition`
+Enables **true agentic behavior**
 
 ---
 
@@ -165,7 +165,7 @@ flowchart TD
     D --> E[End]
 ```
 
-### 📌 Pipeline Steps
+###  Pipeline Steps
 
 1. Fetch latest AI news (Tavily API)
 2. Summarize using LLM
@@ -179,7 +179,7 @@ flowchart TD
 
 ---
 
-# 🧩 System Layers
+#  System Layers
 
 ## 1️⃣ Entry Point (`app.py`)
 
@@ -216,7 +216,7 @@ ChatGroq(api_key, model)
 
 ---
 
-# 🚀 Why This Project Stands Out
+#  Why This Project Stands Out
 
 ✔️ Graph-based AI architecture
 ✔️ Real-world agent workflows
@@ -224,11 +224,11 @@ ChatGroq(api_key, model)
 ✔️ Modular & scalable design
 ✔️ Production-style pipeline
 
-> ⚡ This is NOT just a chatbot — it's a **full Agentic AI System**
+>  This is NOT just a chatbot — it's a **full Agentic AI System**
 
 ---
 
-# ⚡ Installation
+#  Installation
 
 ## 1️⃣ Clone
 
@@ -255,7 +255,7 @@ pip install -r requirements.txt
 * `GROQ_API_KEY`
 * `TAVILY_API_KEY`
 
-👉 Enter via UI
+Enter via UI
 
 ---
 
@@ -267,7 +267,7 @@ streamlit run app.py
 
 ---
 
-# 🎯 Use Cases
+#  Use Cases
 
 | Feature        | Description             |
 | -------------- | ----------------------- |
@@ -277,7 +277,7 @@ streamlit run app.py
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 * Memory persistence
 * Multi-agent collaboration
