@@ -294,3 +294,9 @@ streamlit run app.py
 
 ---
 
+<img width="1899" height="884" alt="Basic-Chatbot" src="https://github.com/user-attachments/assets/c1a1d695-cb00-43f0-986e-4893b5351148" />
+<img width="1901" height="913" alt="Chatbot with web" src="https://github.com/user-attachments/assets/7ce3179a-668f-4dd7-b83f-c3649c2f59b4" />
+<img width="1887" height="903" alt="AI news" src="https://github.com/user-attachments/assets/7eb75f57-4c26-453c-aadd-f9d0f6ab22ab" />
+
+
+
