@@ -3,7 +3,10 @@ import streamlit as st
 from src.LanggraphAgenticAI.UI.StreamlitUI.loadui import LoadStreamlitUI
 from src.LanggraphAgenticAI.LLMS.groqllm import GroqLLM
 from src.LanggraphAgenticAI.Graph.graph_builder import GraphBuilder
-from src.LanggraphAgenticAI.UI.StreamlitUI.display_result import DisplayResultStreamlit
+from src.LanggraphAgenticAI.UI.StreamlitUI.display_result import (
+    DisplayResultStreamlit,
+    render_app_header,
+)
 
 def load_langgraph_agenticai_app():
     """
@@ -21,6 +24,9 @@ def load_langgraph_agenticai_app():
     if not user_input:
         st.error("Error : Failed to load user input from the UI.")
         return
+    
+    usecase = user_input.get("selected_usecase")
+    render_app_header(usecase)
     
     
     if st.session_state.IsFetchButtonClicked:

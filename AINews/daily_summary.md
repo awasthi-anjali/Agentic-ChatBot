@@ -1,18 +1,19 @@
 #Daily AI News Summary
  
- ### **2026-02-26**
-- **Google introduces AI Professional Certificate on Coursera to accelerate workforce readiness.** [https://www.adobomagazine.com/technology/google-introduces-ai-professional-certificate-on-coursera-to-accelerate-workforce-readiness/](https://www.adobomagazine.com/technology/google-introduces-ai-professional-certificate-on-coursera-to-accelerate-workforce-readiness/)
-- **Techmagnate, India's Leading SEO Agency, Reinforces AI-First Approach with Structured Workforce Training.** [https://www.tribuneindia.com/news/advertorial-disclaimer/techmagnate-indias-leading-seo-agency-reinforces-ai-first-approach-with-structured-workforce-training](https://www.tribuneindia.com/news/advertorial-disclaimer/techmagnate-indias-leading-seo-agency-reinforces-ai-first-approach-with-structured-workforce-training)
-- **Asia tech stocks rally as Nvidia earnings soothe AI slowdown fears.** [https://www.cnbc.com/2026/02/26/asia-tech-stocks-nvidia-earnings-jensen-huang-chips-gpu.html](https://www.cnbc.com/2026/02/26/asia-tech-stocks-nvidia-earnings-jensen-huang-chips-gpu.html)
-- **Thomson Reuters shares rally after CoCounsel AI tool draws 1 million users.** [https://today.thefinancialexpress.com.bd/stock-corporate/thomson-reuters-shares-rally-after-cocounsel-ai-tool-draws-1-million-users-1772039128](https://today.thefinancialexpress.com.bd/stock-corporate/thomson-reuters-shares-rally-after-cocounsel-ai-tool-draws-1-million-users-1772039128)
-- **Visa leads payment industry's three-horse race for AI supremacy.** [https://www.finextra.com/newsarticle/47361/visa-leads-payment-industrys-three-horse-race-for-ai-supremacy](https://www.finextra.com/newsarticle/47361/visa-leads-payment-industrys-three-horse-race-for-ai-supremacy)
-- **Indian Workforce Transition in the Age of AI.** [https://www.deccanchronicle.com/videos/indian-workforce-transition-in-the-age-of-ai-1940042](https://www.deccanchronicle.com/videos/indian-workforce-transition-in-the-age-of-ai-1940042)
-- **Emerging technology trends brands and agencies need to know about.** [https://adage.com/technology/ai/aa-emerging-tech-news-and-trends-profound-meta-ias/](https://adage.com/technology/ai/aa-emerging-tech-news-and-trends-profound-meta-ias/)
+ ### **2026-05-09**
+- [Google Expands AI Studio Team In India, Even As Tech Giants Keep Cutting Jobs](https://www.qoo10.co.id/en/tech/95216/google-expands-ai-studio-team-in-india-even-as-tech-giants-keep-cutting-jobs/)
 
-### **2026-02-25**
-- **Nvidia (NVDA) Counters AMD and Big Tech with Vera Rubin AI System.** [https://www.tipranks.com/news/nvidia-nvda-counters-amd-and-big-tech-with-vera-rubin-ai-system](https://www.tipranks.com/news/nvidia-nvda-counters-amd-and-big-tech-with-vera-rubin-ai-system)
-- **On's LightSpray technology scales globally with new South Korean facility.** [https://fashionunited.uk/news/business/ons-lightspray-technology-scales-globally-with-new-south-korean-facility/2026022686509](https://fashionunited.uk/news/business/ons-lightspray-technology-scales-globally-with-new-south-korean-facility/2026022686509)
-- **GenAI delivering now, tokenisation is next for FS industry - survey.** [https://www.finextra.com/newsarticle/47360/genai-delivering-now-tokenisation-is-next-for-fs-industry---survey](https://www.finextra.com/newsarticle/47360/genai-delivering-now-tokenisation-is-next-for-fs-industry---survey)
-- **Anthropic Warned to Let Military Use the Company's AI Tech as It Sees Fit.** [https://www.mbtmag.com/artificial-intelligence/news/22961381/anthropic-warned-to-let-military-use-the-companys-ai-tech-as-it-sees-fit](https://www.mbtmag.com/artificial-intelligence/news/22961381/anthropic-warned-to-let-military-use-the-companys-ai-tech-as-it-sees-fit)
-- **Samsung rolls out more AI, new privacy shield mode with the new Galaxy S26 lineup.** [https://apnews.com/article/samsung-galaxy-s26-artificial-intelligence-b23e8c9c51c2d09e772fe8709b867ca7](https://apnews.com/article/samsung-galaxy-s26-artificial-intelligence-b23e8c9c51c2d09e772fe8709b867ca7)
-- **CNBC Daily Open: Nvidia’s earnings beat and other AI news give markets relief — for now.** [https://www.cnbc.com/2026/02/26/cnbc-daily-open-nvidias-earnings-beat-ai-news-give-markets-relief-for-now.html](https://www.cnbc.com/2026/02/26/cnbc-daily-open-nvidias-earnings-beat-ai-news-give-markets-relief-for-now.html)
+### **2026-05-08**
+- [AI Bottleneck: Organizations Struggle to Get Value Out of AI](https://www.newsweek.com/ai-bottleneck-organizations-wipro-consulting-chief-11929426)
+- [The Tech Download: Meta, Google enter AI agent race as ‘agentic wars’ heat up](https://www.cnbc.com/2026/05/08/ai-agent-meta-google-agentic-wars-tech-download.html)
+- [Anthropic signs $1.8 billion AI cloud deal with Akamai, Bloomberg News reports | Reuters](https://www.reuters.com/business/anthropic-signs-18-billion-ai-cloud-deal-with-akamai-bloomberg-news-reports-2026-05-08/)
+- [US power grids on the brink of crisis due to Artificial Intelligence](https://zamin.uz/en/technology/199832-us-power-grids-on-the-brink-of-crisis-due-to-artificial-intelligence.html)
+- [The $42 billion auto giant you've never heard of is building AI into its factories](https://www.businessinsider.com/auto-giant-magna-ai-factories-2026-5)
+- [Cloudflare lays off 1,100 employees due to AI](https://zamin.uz/en/technology/199890-cloudflare-lays-off-1-100-employees-due-to-ai.html)
+- [AI & Tech brief: The White House’s tug-of-war on AI policy](https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/05/08/ai-tech-brief-white-houses-tug-of-war-ai-policy/)
+- [Health Tech Weekly Rundown: Tether rolls out medical AI for phones, wearables; Medaptus launches operational ‘command center’ for hospital medicine](https://www.fiercehealthcare.com/health-tech/health-tech-weekly-rundown-tether-launches-medical-ai-phones-wearables-medaptus)
+- [US Vice President JD Vance was "alarmed" by the capabilities of the latest AI models](https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-895605)
+- [Choice Hotels International Unveils New Technologies and AI-Powered Solutions to Help Owners Capture More Demand and Operational Excellence](https://www.hospitalitynet.org/news/4132300/choice-hotels-international-unveils-new-technologies-and-ai-powered-solutions-to-help-owners-capture-more-demand-and-operational-excellence)
+- [PitchBook’s AI technology investment taxonomy provides the granular map needed to navigate the transition from traditional SaaS to AI-driven digital labor](https://pitchbook.com/news/reports/q2-2026-pitchbook-analyst-note-the-saas-pocalypse-opportunity)
+- [Industry Reframes Security Around AI System Behavior](https://letsdatascience.com/news/industry-reframes-security-around-ai-system-behavior-e2a62b71)
+- [Banking Technology Magazine May 2026 Issue Out Now](https://www.fintechfutures.com/publications/banking-technology-magazine/banking-technology-magazine-may-2026-issue-out-now)
