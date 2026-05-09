@@ -1,3 +1,7 @@
+### ![Watch Demo]
+https://github.com/user-attachments/assets/5f9ece7c-3975-4f52-9bc3-d6c2db2f38aa
+
+
 #  LangGraph Agentic AI Application
 
 > **Stateful Agentic AI System using LangGraph, Groq LLM, and Tavily Search**
