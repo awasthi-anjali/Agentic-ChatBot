@@ -1,6 +1,7 @@
 import streamlit as st
 import os 
 from src.LanggraphAgenticAI.UI.uiconfigfile import Config 
+from src.LanggraphAgenticAI.UI.StreamlitUI.display_result import inject_styles
 
 class LoadStreamlitUI:
     def __init__(self):
@@ -9,7 +10,7 @@ class LoadStreamlitUI:
 
     def load_streamlit_ui(self):
         st.set_page_config(page_title= self.config.get_page_title(),layout="wide")
-        st.header(self.config.get_page_title())
+        inject_styles()
         st.session_state.timeframe=''
         st.session_state.IsFetchButtonClicked =False
 
