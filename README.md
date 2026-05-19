@@ -13,9 +13,9 @@ This project is a **production-style Agentic AI system** that orchestrates **sta
 
 It integrates:
 
-* 🤖 **Groq LLM (LLaMA models)**
-* 🌐 **Tavily Web Search API**
-* 🎨 **Streamlit UI**
+*  **Groq LLM (LLaMA models)**
+*  **Tavily Web Search API**
+*  **Streamlit UI**
 
 Supports:
 
@@ -80,7 +80,7 @@ flowchart LR
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```bash
 app.py
@@ -123,7 +123,7 @@ class State(TypedDict):
 
 ---
 
-# 🤖 Use Case 1: Basic Chatbot
+#  Use Case 1: Basic Chatbot
 
 ```mermaid
 flowchart TD
@@ -136,7 +136,7 @@ flowchart TD
 
 ---
 
-# 🌍 Use Case 2: Chatbot with Web Search
+#  Use Case 2: Chatbot with Web Search
 
 ```mermaid
 flowchart TD
@@ -148,7 +148,7 @@ flowchart TD
     E --> F[End]
 ```
 
-### ⚙️ How it works:
+###  How it works:
 
 * LLM decides tool usage
 * Executes web search
@@ -159,7 +159,7 @@ Enables **true agentic behavior**
 
 ---
 
-# 📰 Use Case 3: AI News Pipeline
+#  Use Case 3: AI News Pipeline
 
 ```mermaid
 flowchart TD
@@ -185,11 +185,11 @@ flowchart TD
 
 #  System Layers
 
-## 1️⃣ Entry Point (`app.py`)
+## 1️ Entry Point (`app.py`)
 
 * Launches Streamlit app
 
-## 2️⃣ Controller (`main.py`)
+## 2️ Controller (`main.py`)
 
 * Handles:
 
@@ -197,13 +197,13 @@ flowchart TD
   * Input processing
   * Graph execution
 
-## 3️⃣ UI Layer
+## 3️ UI Layer
 
 * Dynamic config via `.ini`
 * Stores user inputs
 * Clean modular design
 
-## 4️⃣ LLM Layer
+## 4️ LLM Layer
 
 ```python
 ChatGroq(api_key, model)
@@ -212,7 +212,7 @@ ChatGroq(api_key, model)
 * Dynamic model selection
 * Fast inference
 
-## 5️⃣ LangGraph Layer
+## 5️ LangGraph Layer
 
 * Stateful execution
 * Conditional routing
@@ -234,27 +234,27 @@ ChatGroq(api_key, model)
 
 #  Installation
 
-## 1️⃣ Clone
+## 1️ Clone
 
 ```bash
 git clone https://github.com/awasthi-anjali/Agentic-ChatBot.git
 cd langgraph-agentic-ai
 ```
 
-## 2️⃣ Virtual Environment
+## 2️ Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-## 3️⃣ Install Dependencies
+## 3️ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4️⃣ Set API Keys
+## 4️ Set API Keys
 
 * `GROQ_API_KEY`
 * `TAVILY_API_KEY`
@@ -263,7 +263,7 @@ Enter via UI
 
 ---
 
-## ▶️ Run App
+##  Run App
 
 ```bash
 streamlit run app.py
